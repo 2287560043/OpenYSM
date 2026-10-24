@@ -1,0 +1,19 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.elfmcys.yesstevemodel.mixin",
+  "plugin": "com.elfmcys.yesstevemodel.mixin.plugin.MixinTweaker",
+  "compatibilityLevel": "JAVA_25",
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "client": [
+    "client.GuiGraphicsExtractorAccessor", "client.TextureManagerAccessor", "client.EntityWalkDistanceMixin", "client.RenderTypeAccessor", "client.RenderPipelinesAccessor", "client.ArrowEntityAccessor", "client.EntityRenderDispatcherMixin", "client.EntityRenderStateMixin",
+    "client.FishingHookAccessor", "client.InventoryScreenMixin", "client.LivingEntityAccessor",
+    "client.LivingRendererMixin", "client.PauseScreenMixin", "client.ScreenAccessor",
+    "client.ThrowableItemProjectileAccessor", "client.WorldRendererMixin"
+  ],
+  "mixins": [
+    "AbstractArrowEntityMixin", "ConnectionAccessor", "ProjectileEntityMixin", "ServerCommonPacketListenerImplAccessor", "ServerPlayerMixin"
+  ]
+}
